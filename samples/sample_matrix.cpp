@@ -11,21 +11,21 @@
 
 void main()
 {
-  TMatrix<int> a(5), b(5), c(5);
-  int i, j;
-
-  setlocale(LC_ALL, "Russian");
-  cout << "Тестирование программ поддержки представления треугольных матриц"
-    << endl;
-  for (i = 0; i < 5; i++)
-    for (j = i; j < 5; j++ )
-    {
-      a[i][j] =  i * 10 + j;
-      b[i][j] = (i * 10 + j) * 100;
-    }
-  c = a + b;
-  cout << "Matrix a = " << endl << a << endl;
-  cout << "Matrix b = " << endl << b << endl;
-  cout << "Matrix c = a + b" << endl << c << endl;
+  TMatrix<int> m1(4), b(3), c(3);
+  
+  m1[0][0] = 10;
+  m1[0][1] = 20;
+  m1[0][2] = 30;
+  m1[0][3] = 100;
+  m1[1][1] = 40;
+  m1[1][2] = 50;
+  m1[1][3] = 150;
+  m1[2][2] = 60;
+  m1[2][3] = 200;
+  m1[3][3] = 250;
+  //c = a + b;
+  cout << "Matrix a = " << endl << m1 << endl;
+  //cout << "Matrix b = " << endl << b << endl;
+  //cout << "Matrix c = a + b" << endl << c << endl;
 }
 //---------------------------------------------------------------------------
